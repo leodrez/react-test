@@ -24,7 +24,7 @@ class CommentBox extends Component {
     return(
       <div className="comment-box">
         <h4 className="h4">{this._getCommentsTitle(comments.length)}</h4>
-        <button onClick={this._handleClick.bind(this)}>Show comments</button>
+        <button onClick={this._handleClick.bind(this)}>{buttonText}</button>
         {commentNodes}
       </div>
     );
